@@ -1,0 +1,54 @@
+{
+    "groups" : [
+        {   "Name": "CA-Persona-Admins", 
+            "Description": "Dynamic security group based on attribute that only employees have",
+            "Type": "dynamic",
+            "rule": "user.employeeId -ne null"
+        },
+        {   "Name": "CA-Persona-Admins-BaseProtection-Exclusions", 
+            "Description": "Exclusion for the Base Protection / IG for request / Access Review Monthly",
+            "Type": "static",
+            "rule": ""
+        },
+        {   "Name": "CA-Persona-Admins-IdentityProtection-Exclusions", 
+            "Description": "Exclusion for the Identity Protection / IG for request / Access Review Monthly",
+            "Type": "static",
+            "rule": ""
+        },
+        {   "Name": "CA-Persona-Admins-DataProtection-Exclusions", 
+            "Description": "Exclusion for the Data Protection / IG for request / Access Review Monthly",
+            "Type": "static",
+            "rule": ""
+        },
+        {   "Name": "CA-Persona-Admins-AppProtection-Exclusions", 
+            "Description": "Exclusion for the App Protection / IG for request / Access Review Monthly",
+            "Type": "static",
+            "rule": ""
+        },
+        {   "Name": "CA-Persona-Admins-AttackSurface-Exclusions", 
+            "Description": "Exclusion for the App Protection / IG for request / Access Review Monthly",
+            "Type": "static",
+            "rule": ""
+        },
+        {   "Name": "CA-Persona-Admins-Ring0", 
+            "Description": "Manually managed by Administrator(or responsable to conduct the deploy)",
+            "Type": "static",
+            "rule": ""
+        },
+        {   "Name": "CA-Persona-Admins-Ring1", 
+            "Description": "Manually managed by Administrator(or responsable to conduct the deploy)",
+            "Type": "static",
+            "rule": ""
+        },
+        {   "Name": "CA-Persona-Admins-Ring2", 
+            "Description": "Dynamic security group with criteria that result in about 1%",
+            "Type": "dynamic",
+            "rule": ""
+        },
+        {   "Name": "CA-Persona-Admins-Ring3", 
+            "Description": "Dynamic security group with criteria that result in about 5-10%",
+            "Type": "dynamic",
+            "rule": ""
+        }
+    ]
+}

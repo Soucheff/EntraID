@@ -1,0 +1,9 @@
+{
+    "groups" : [
+        {   "Name": "CA-BreakGlassAccount", 
+            "Description": "Group for Break Glass Account",
+            "Type": "static",
+            "rule":""
+        }
+    ]
+}
