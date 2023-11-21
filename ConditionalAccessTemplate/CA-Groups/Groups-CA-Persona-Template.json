@@ -1,0 +1,52 @@
+[
+    {   "Name": "CA-Persona-{{PERSONA}}", 
+        "Description": "Dynamic security group based on attribute that only employees have",
+        "Type": "dynamic",
+        "rule": "user.employeeId -ne null"
+    },
+    {   "Name": "CA-Persona-{{PERSONA}}-BaseProtection-Exclusions", 
+        "Description": "Exclusion for the Base Protection / IG for request / Access Review Monthly",
+        "Type": "static",
+        "rule": ""
+    },
+    {   "Name": "CA-Persona-{{PERSONA}}-IdentityProtection-Exclusions", 
+        "Description": "Exclusion for the Identity Protection / IG for request / Access Review Monthly",
+        "Type": "static",
+        "rule": ""
+    },
+    {   "Name": "CA-Persona-{{PERSONA}}-DataProtection-Exclusions", 
+        "Description": "Exclusion for the Data Protection / IG for request / Access Review Monthly",
+        "Type": "static",
+        "rule": ""
+    },
+    {   "Name": "CA-Persona-{{PERSONA}}-AppProtection-Exclusions", 
+        "Description": "Exclusion for the App Protection / IG for request / Access Review Monthly",
+        "Type": "static",
+        "rule": ""
+    },
+    {   "Name": "CA-Persona-{{PERSONA}}-AttackSurface-Exclusions", 
+        "Description": "Exclusion for the App Protection / IG for request / Access Review Monthly",
+        "Type": "static",
+        "rule": ""
+    },
+    {   "Name": "CA-Persona-{{PERSONA}}-Ring0", 
+        "Description": "Manually managed by Administrator(or responsable to conduct the deploy)",
+        "Type": "static",
+        "rule": ""
+    },
+    {   "Name": "CA-Persona-{{PERSONA}}-Ring1", 
+        "Description": "Manually managed by Administrator(or responsable to conduct the deploy)",
+        "Type": "static",
+        "rule": ""
+    },
+    {   "Name": "CA-Persona-{{PERSONA}}-Ring2", 
+        "Description": "Dynamic security group with criteria that result in about 1%",
+        "Type": "dynamic",
+        "rule": ""
+    },
+    {   "Name": "CA-Persona-{{PERSONA}}-Ring3", 
+        "Description": "Dynamic security group with criteria that result in about 5-10%",
+        "Type": "dynamic",
+        "rule": ""
+    }
+]

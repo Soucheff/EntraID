@@ -1,0 +1,1 @@
+Todos os usuários vinculados diretamente a organização(normalmente com EmployeeID diferente de NULL)
